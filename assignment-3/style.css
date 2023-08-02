@@ -1,0 +1,49 @@
+*{
+	box-sizing:border-box;
+	margin:0px;
+	padding:0px;
+}
+body{
+	margin:0px;
+	padding:0px;
+}
+#header-nav{
+	background-color: blue;
+	border:0;
+	border-radius:0;
+}
+h1{
+	padding:20px;
+	text-align:center;
+}
+h2{
+	text-align:center;
+}
+p{
+	margin:20px;
+}
+.inside{
+	background-color:grey;
+    margin: 10px; 
+
+}
+@media (min-width: 768px){
+	#chicken{
+		margin-left:-30px;
+	}
+
+}
+@media (min-width: 768px)and(max-width:992px){
+		#sushi{
+		margin-left:-30px;
+	}
+}
+header{
+	background-color:grey;
+}
+
+
+ .navbar .dropdown-menu {
+      border: none;
+      background-color: #f8f9fa;
+    }
