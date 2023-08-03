@@ -1,0 +1,17 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	width:100%;
+	font-family: 'Borel', cursive;
+	background-color:#dd571c;
+}
+div{
+	background-color:#fc6a03;
+	border:5px dotted white;
+	width:200px;
+	height:200px;
+
+}
