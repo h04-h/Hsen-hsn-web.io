@@ -9,11 +9,12 @@
 		seats_menu.appendChild(option);
 	}
 
-	const travel_class = document.querySelector("#travel_class").value;
+
 	var ticket_price=0;
 	console.log(travel_class);
 	//window.one = one;
 	function price(){
+		const travel_class = document.querySelector("#travel_class").value;
 		if(travel_class ==="Economy class"){
 			ticket_price = 250;
 		}
