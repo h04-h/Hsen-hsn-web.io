@@ -1,3 +1,3 @@
-
-
-
+hi:hello#bye#zahet
+nice:good#bad#khara
+goodmorning:bonjour#bonnenuit#nem khlsne
