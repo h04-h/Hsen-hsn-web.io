@@ -3,8 +3,9 @@
 <head>
 	<title>Travel to Greece!</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width:device-width,initial-scale:1">
+	<meta name='viewport' content='width=device-width,initial-scale=1.0'>
 	<link rel="stylesheet" type="text/css" href="../styleOfBooking.css">
+	<link rel="icon" type="image/x-icon" href="../photos/logo_hhf.svg">
 </head>
 <body>
 	<div>
@@ -40,18 +41,18 @@
 <div class="booking-body">
 	<div class="booking">
 		<h1>Book now!</h1>
-		<form>
+		<form action="thanks.html">
 		<input type="text" placeholder="First Name" required autocomplete="off">
 		<input type="text" placeholder="Last Name" required autocomplete="off">
-		<select id="travel_class">
-			<option selected disabled hidden>Select an Option</option>
+		<select id="travel_class" required="">
+			<option value="" selected disabled hidden>Select an Option</option>
 			<option>Economy class</option>
 			<option>Premium Economy class</option>
 			<option>Business class</option>
 			<option>First class</option>
 		</select>
-		<select id="seat">
-			<option selected disabled hidden>Select your seat:</option>
+		<select id="seat" required="">
+			<option value="" selected disabled hidden>Select your seat:</option>
 		</select>
 		<input type="submit" value="Submit" onclick="price()">
 		</form>

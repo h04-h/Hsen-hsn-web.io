@@ -6,19 +6,39 @@
 	list-style: none;
 }
 header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #0082e6;
 	height:100px;
+	width: 100%;
 	font-family: 'Borel', cursive;
 }
 
 #logo{
-	margin-left:25px;
-	height:100px;
-	width:100px;
+	margin-left:20px;
+	margin-top:10px;
+	height:80px;
+	width:150px;
 }
-.myList {
-	float:right;
-	margin:40px;
+#login{
+	display:inline;
+}
+#login p {
+	border-width: 2px;
+	border-color: blue;
+	border-style: solid;
+	border-radius: 5px;
+	margin:5px;
+	text-align: center;
+	padding: 5px;
+	background-color: white;
+	color:blue;
+}
+#login p:hover{
+	border: none;
+	background-color:grey;
+	color:white;
 }
 nav ul li{
 	display:inline-block;
@@ -32,7 +52,7 @@ body{
     min-height: 100vh;
 	font-family: 'Borel', cursive;
 	background-color:#d0efff;
-	background-image:url('photos/jumbotron.jpeg');
+	background-image:url('photos/jumbotron2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -96,6 +116,7 @@ a:hover,a:active{
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 }
+
 #second-div{
 	display:flex;
 	flex-wrap: nowrap;
@@ -151,6 +172,10 @@ a:hover,a:active{
 	height:250px;
 	margin-top:10px;
 }
+.flights-body img:hover{
+	width:500;
+	height:300px;
+}
 /*Services*/
 .services-body{
 	display:flex;
@@ -159,6 +184,7 @@ a:hover,a:active{
 	justify-content: space-around;
  	align-items: center;
  	height: 500px;
+ 
 }
 .service{
 	text-align: center;
@@ -181,24 +207,11 @@ a:hover,a:active{
 	margin:auto;
 	margin-top:2%;
 }
-/*About*/
-#about-body{
-	background-color: #0082e6;
-	background-image: none;
-
+.about-text{
+	width: 100%;
+	height: 100px;
 }
-#about-body p{
-	padding: 15px;	
-}
-#about{
-	color:#686868;
-	width: 60%;
-	display: flex;
-	justify-content: space-around;
-	margin: auto;
-	background-color :rgba(255,255,255,0.5);
-	border-radius: 20px;
-}
+/*Contact us*/
 #draw1{
 	width:200px;
 	height:200px;
@@ -216,7 +229,6 @@ a:hover,a:active{
 	right:20px;
 	transform: rotate(-30deg);
 }
-/*Contact us*/
 #contact{
 	width:50%;
 	margin:auto;
@@ -264,4 +276,56 @@ input[type=submit]:hover ,input[type=submit]:active {
 	width:1em;
 	height:1em;
 }
-
+@media only screen and (max-width:900px ){
+	/*index*/
+	#second-div {
+		display: block;
+		width: 80%;
+		margin-bottom: 100px;
+		margin-left: 100px;
+	}
+	.resp{
+		display: block;
+		width: 80%;
+		margin-left: 100px;
+	}
+	#body-text1{
+		font-size: 30px;
+		margin-left: 50px;
+	}
+	#body-text2{
+		font-size: 30px;
+		margin-left: 100px;
+	}
+	/*contact us*/
+	#draw1 , #draw2{
+		display: none;
+	}
+	
+	/*flights*/
+	.flight{
+		width: 300px;
+		height: 150px;
+	}
+	.flight img{
+		width: 280px;
+		height: 140px;
+	}
+	.flight:hover{
+		width: 320px;
+		height: 160px;
+	}
+	.flight img:hover{
+		width: 300px;
+		height: 150px;
+	}
+	/*about*/
+	.service img{
+		width: 300px;
+		height: 180px;
+	}
+	.about-text{
+		width: 410px; /*ad size akbar wehde fihon la ydalo aa sawet baed*/
+		height: 160px;
+	}
+}

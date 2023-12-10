@@ -1,6 +1,4 @@
-//(function(window){
-	var one = {};
-	console.log("Welcome to HH-Flights!!");
+
 	const seats_menu = document.getElementById("seat");
 	for (let i = 0; i < 50; i++){//50 number of seats
 		const option = document.createElement("option");
@@ -12,7 +10,6 @@
 
 	var ticket_price=0;
 	console.log(travel_class);
-	//window.one = one;
 	function price(){
 		const travel_class = document.querySelector("#travel_class").value;
 		if(travel_class ==="Economy class"){
@@ -27,7 +24,9 @@
 		else if(travel_class ==="First class"){
 			ticket_price = 1000;
 		}
-		alert("The ticker price is:"+ ticket_price);
+		var priceDue = "The ticket price is:"+ ticket_price;
+		alert(priceDue);
+
 	}
-//	}
-//})(window);
+		
+		
